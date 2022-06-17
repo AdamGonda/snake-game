@@ -3,7 +3,6 @@ const { pipe } = require('./utils')
 const { move } = require('./move')
 const { turn } = require('./turn')
 const { seekFood } = require('./seekFood')
-const { isGameOver } = require('./isGameOver')
 
 const renderMap = { food: 'o', head: 'X', body: 'x' }
 const initialState = {
@@ -18,7 +17,7 @@ const initialState = {
     ],
     dir: 'RIGHT',
   },
-  food: { x: 12, y: 5 },
+  food: { x: 9, y: 5 },
   view: { width: 20, height: 10 },
   isGameOver: false,
 }
@@ -42,7 +41,6 @@ function update(state, input) {
     turn(input),
     move,
     seekFood,
-    isGameOver
   )
 }
 
