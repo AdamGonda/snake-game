@@ -1,19 +1,15 @@
 const { run } = require('loop')
 const { pipe } = require('./utils')
-const { move } = require('./move')
 
 const renderMap = { head: 'X', body: 'x' }
 const initialState = {
   snake: {
     body: [
       {
-        x: 13,
+        x: 10,
         y: 5,
-        pX: 12,
-        pY: 5,
       },
     ],
-    dir: 'RIGHT',
   },
   view: { width: 20, height: 10 },
   isGameOver: false,
@@ -34,7 +30,7 @@ function toCommon(state) {
 // prettier-ignore
 function update(state, input) {
   return pipe(state)(
-    move,
+    // features...
   )
 }
 
