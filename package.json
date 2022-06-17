@@ -1,0 +1,15 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "adamgonda",
+  "license": "ISC",
+  "dependencies": {
+    "loop": "github:adamgonda/loop"
+  }
+}
